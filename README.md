@@ -1,16 +1,34 @@
-# React + Vite
+# Лабораторная работа №13 — Основы React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React-приложение по дисциплине «Разработка программных приложений и WEB-программирование».
 
-Currently, two official plugins are available:
+Проект представляет собой клиентскую версию сайта «Новосибирск-Тур», выполненную на React без backend, базы данных и авторизации.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Реализовано
 
-## React Compiler
+* компонентная структура приложения;
+* вывод списка туров;
+* фильтрация и сортировка записей;
+* использование `key` при выводе списка;
+* форма добавления нового тура;
+* клиентская валидация формы с визуальным выделением ошибок.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Запуск проекта
 
-## Expanding the ESLint configuration
+Установить зависимости:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+Запустить локальный сервер:
+
+```bash
+npm run dev -- --host 127.0.0.1 --port 5173
+```
+
+После запуска приложение доступно по адресу:
+
+```text
+http://127.0.0.1:5173/
+```
